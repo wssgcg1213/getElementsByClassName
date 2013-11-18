@@ -18,7 +18,7 @@ var getElementsByClassName2 = function(c){
 	var tags = document.getElementsByTagName("*");
 	var result = new Array();
 	var pattern = new RegExp("\\b"+c+"\\b","i");    		//pattern = new RegExp("\\b"+c+"(?!\\w)","i");
-		for(var i=0; i<x.length; i++)
+		for(var i=0; i<tags.length; i++)
 			if(pattern.test(tags[i].className))result.push(tags[i]);
 	//var timestamp1 = new Date().getTime();
 	//console.log(timestamp1-timestamp0+"ms");
