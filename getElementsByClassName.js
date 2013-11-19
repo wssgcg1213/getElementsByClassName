@@ -1,4 +1,4 @@
-var getElementsByClassName = function(c){
+document.getElementsByClassName = function(c){
 	//var timestamp0 = new Date().getTime();
 	var eles = new Array();
 	var tags = document.getElementsByTagName("*");
@@ -13,7 +13,7 @@ var getElementsByClassName = function(c){
 }
 
 
-var getElementsByClassName2 = function(c){
+var getElementsByClassName = function(c){
 	//var timestamp0 = new Date().getTime();
 	var tags = document.getElementsByTagName("*");
 	var result = new Array();
